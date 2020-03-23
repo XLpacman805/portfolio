@@ -32,7 +32,6 @@ export default function Navigation() {
           <Typography variant="h6" className={classes.title}>
             Johnny's Portfolio
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </div>
