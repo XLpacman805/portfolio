@@ -1,34 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Container from '@material-ui/core/Container';
+import { makeStyles, withTheme } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Avatar from '@material-ui/core/Avatar';
 
-class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
 
-    render() {
-        return (
-            <Container maxWidth="xl" disableGutters="true">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <p>
-                        Edit <code>src/App.js</code> and save to reload.
-            </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-            </a>
-                </header>
-            </Container>    
-            );
-    }
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    marginTop: theme.spacing(3),
+  },
+  large: {
+    width: '50vw',
+    maxWidth: 384,
+    height: 'auto',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+  },
+  headline: {
+    color: theme.palette.text.primary,
+    textAlign: 'center',
+  }
+}));
+
+export default function Header() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <Grid container spacing={1}>
+        <Grid item xs={12}>
+            <center>
+                <Avatar className={classes.large} src="https://avatars3.githubusercontent.com/u/12060907?s=460&u=3d181b7329ff78b29de17559227ca9705c0bad68&v=4" />
+            </center>
+        </Grid>
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+            <h3 className={classes.headline}>Full Stack Web Developer | Software Engineer | React | NodeJS | Salesforce | Javascript | DevOps | Front End | Back End </h3>
+        </Grid>
+        <Grid item xs={1} />
+
+      </Grid>
+    </div>
+  );
 }
-
-export default Header
