@@ -30,7 +30,7 @@ export default function Navigation() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Johnny's Portfolio
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
