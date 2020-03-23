@@ -8,9 +8,10 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles({
   list: {
@@ -48,9 +49,14 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['GitHub', 'Linkdln', 'Send email'].map((text, index) => (
+        {['Home', 'Projects', 'Contact'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon>
+                {index === 0 ? <HomeIcon /> : 
+                index === 1 ? <AssignmentIcon /> :
+                index === 2 ? <EmailIcon /> : null
+                }
+            </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
