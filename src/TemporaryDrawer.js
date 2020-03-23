@@ -48,16 +48,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {['GitHub', 'Linkdln', 'Send email'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={text} />
@@ -69,15 +60,11 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      {['left'].map(anchor => (
-        <React.Fragment key={anchor}>
-          <MenuIcon onClick={toggleDrawer(anchor, true)}>
-          </MenuIcon>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
+        <MenuIcon onClick={toggleDrawer('left', true)}>
+        </MenuIcon>
+        <Drawer anchor='left' open={state['left']} onClose={toggleDrawer('left', false)}>
+            {list('left')}
+        </Drawer>
     </div>
   );
 }
