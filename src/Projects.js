@@ -8,6 +8,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import exerciseTrackerImage from './images/exercise-tracker.jpg';
+import thisWebsiteImage from './images/this-website.jpg';
+import urlShortenerImage from './images/url-shortener.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -32,8 +35,8 @@ export default function Projects() {
                 <CardActionArea>
                     <CardMedia
                     className={classes.media}
-                    image="https://via.placeholder.com/500"
-                    title="Contemplative Reptile"
+                    image={exerciseTrackerImage}
+                    title="Exercise Tracker Card Media"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -60,8 +63,8 @@ export default function Projects() {
                 <CardActionArea>
                     <CardMedia
                     className={classes.media}
-                    image="https://via.placeholder.com/500"
-                    title="Contemplative Reptile"
+                    image={urlShortenerImage}
+                    title="URL Shortener Microservice Media"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -88,12 +91,12 @@ export default function Projects() {
                 <CardActionArea>
                     <CardMedia
                     className={classes.media}
-                    image="https://via.placeholder.com/500"
-                    title="Contemplative Reptile"
+                    image={thisWebsiteImage}
+                    title="An image that says this website wrapped in curly braces"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        This Portfolio!
+                        This Website!
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                         Written in REACT using the Material-UI component library. I utilize hooks, props, and APIs to make this site. It's also deployed to Google App Engine. I planned it out using Jira, and made wireframes with Invision.
