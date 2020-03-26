@@ -76,10 +76,10 @@ export default function Projects() {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                <Button size="small" color="primary">
-                    Open Application
+                <Button size="small" color="primary" href="https://shor10.glitch.me/api/shorturl/tlv3FtF" target="_blank">
+                    Live Demo
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href="https://github.com/XLpacman805/shor10" target="_blank">
                     See Code
                 </Button>
             </CardActions>
@@ -104,10 +104,10 @@ export default function Projects() {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                <Button size="small" color="primary">
-                    Open wireframes
+                <Button size="small" color="primary" href="https://johnnymeza354709.invisionapp.com/freehand/portfolio-Yw2lqdfQA?v=vt1YhGHUZqBxTnYxO3N%2Fvg%3D%3D&linkshare=urlcopied" target="_blank">
+                    Open Wireframes
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href="https://github.com/XLpacman805/portfolio" target="_blank">
                     See Code
                 </Button>
             </CardActions>
