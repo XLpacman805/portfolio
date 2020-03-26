@@ -48,13 +48,12 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Projects', 'Contact'].map((text, index) => (
+        {['Home', 'Projects'].map((text, index) => (
           <Button href={'#' + text}>
             <ListItem key={text}>
               <ListItemIcon>
                   {index === 0 ? <HomeIcon /> : 
-                  index === 1 ? <AssignmentIcon /> :
-                  index === 2 ? <EmailIcon /> : null
+                  index === 1 ? <AssignmentIcon /> : null
                   }
               </ListItemIcon>
               <ListItemText primary={text} />
