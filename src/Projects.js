@@ -31,7 +31,7 @@ export default function Projects() {
                 <h2>Projects</h2>
             </Grid>
 
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
@@ -59,7 +59,7 @@ export default function Projects() {
                 </Card>
             </Grid>
 
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
@@ -72,7 +72,7 @@ export default function Projects() {
                             URL Shortener Microservice
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            A REST API written in JavaScript using NodeJS and MongoDB. It will take a long url and return a short url. The short url, when visited redirects you to the original website.
+                            A REST API written in JavaScript using NodeJS and MongoDB. It will take a long url and return a short url. The short url, when visited redirects you to the original website. Documentation is on GitHub and can be easily tested with Postman.
                         </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -87,7 +87,7 @@ export default function Projects() {
                 </Card>
             </Grid>
 
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
