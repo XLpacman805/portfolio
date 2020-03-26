@@ -1,6 +1,6 @@
 # Johnny's Portfolio Website
 
-Welcome to my portfolio. It's built in React and deployed to the cloud with Google App Engine. I'll update this when I complete new projects or have freetime outside of work to polish it.
+Welcome to my portfolio. It's built in React and deployed to the cloud with Google App Engine. I'll update this when I complete new projects or have freetime outside of work to polish it. [View Live](https://johnnymezadev.com/).
 
 ## To Do
 
