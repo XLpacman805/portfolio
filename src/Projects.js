@@ -43,15 +43,15 @@ export default function Projects() {
                         Exercise Tracker API
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        A REST API written in JavaScript using NodeJS and MongoDB. You can use it to add user, get a list of users,and get a certain users' exercise logs. Those exercise logs can also be filtered by date rang, and response limit. 
+                        A REST API written in JavaScript using NodeJS and MongoDB. You can use it to add user, get a list of users,and get a certain users' exercise logs. Those exercise logs can also be filtered by date rang, and response limit. Deployed on Google App Engine.
                     </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href="https://master-253803.appspot.com/" target="_blank">
                     Open Application
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href="https://github.com/XLpacman805/exercise-tracker/tree/master" target="_blank">
                     See Code
                 </Button>
             </CardActions>
