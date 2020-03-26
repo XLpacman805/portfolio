@@ -10,6 +10,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import EmailIcon from '@material-ui/icons/Email';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
   list: {
@@ -48,15 +49,17 @@ export default function TemporaryDrawer() {
     >
       <List>
         {['Home', 'Projects', 'Contact'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-                {index === 0 ? <HomeIcon /> : 
-                index === 1 ? <AssignmentIcon /> :
-                index === 2 ? <EmailIcon /> : null
-                }
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+          <Button href={'#' + text}>
+            <ListItem key={text}>
+              <ListItemIcon>
+                  {index === 0 ? <HomeIcon /> : 
+                  index === 1 ? <AssignmentIcon /> :
+                  index === 2 ? <EmailIcon /> : null
+                  }
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+            </Button>  
         ))}
       </List>
     </div>

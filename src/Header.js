@@ -49,12 +49,12 @@ export default function Header() {
 
         <Grid item xs={1} lg={3} xl={5}/>
         <Grid item xs={5} lg={3} xl={1}>
-            <Button variant="contained" color="primary" size="medium" fullWidth={true}>
+            <Button variant="contained" color="primary" size="medium" fullWidth={true} href="#Projects">
                 View Projects
             </Button>
         </Grid>
         <Grid item xs={5} lg={3} xl={1}>
-            <Button variant="contained" color="secondary" size="medium" fullWidth={true}>
+            <Button variant="contained" color="secondary" size="medium" fullWidth={true} href="https://my.indeed.com/p/johnnym-nw3vckg" target="_blank">
                 See Resume
             </Button>
         </Grid>
