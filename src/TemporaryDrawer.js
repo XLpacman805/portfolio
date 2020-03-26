@@ -9,7 +9,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentIcon from '@material-ui/icons/Assignment';
-import EmailIcon from '@material-ui/icons/Email';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({

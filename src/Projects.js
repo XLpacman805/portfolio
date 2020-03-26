@@ -28,7 +28,7 @@ export default function Projects() {
     <div id="Projects">
         <Grid container spacing={1}>
             <Grid item xs={12}>
-                <h2>Projects</h2>
+                <h2>Projects (more coming soon)</h2>
             </Grid>
 
             <Grid item xs={12} sm={6} lg={4}>
