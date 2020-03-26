@@ -5,6 +5,7 @@ Welcome to my portfolio. It's built in React and deployed to the cloud with Goog
 ## To Do
 
 - [ ] Configure GitHub Actions for CI/CD
+- [ ] Setup code to do automatic HTTPS redirect
 - [ ] Add Google Analytics
 - [ ] Add Certifications Section
 - [ ] Add About Me Section
@@ -18,7 +19,7 @@ Welcome to my portfolio. It's built in React and deployed to the cloud with Goog
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.
 
