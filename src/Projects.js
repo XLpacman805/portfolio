@@ -31,7 +31,7 @@ export default function Projects() {
                 <h2>Projects</h2>
             </Grid>
 
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
@@ -59,7 +59,7 @@ export default function Projects() {
                 </Card>
             </Grid>
 
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
@@ -87,7 +87,7 @@ export default function Projects() {
                 </Card>
             </Grid>
 
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
