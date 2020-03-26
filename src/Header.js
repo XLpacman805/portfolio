@@ -49,7 +49,7 @@ export default function Header() {
 
         <Grid item xs={1} lg={3} xl={5}/>
         <Grid item xs={5} lg={3} xl={1}>
-            <Button variant="contained" color="primary" size="medium" fullWidth={true} href="#projects">
+            <Button variant="contained" color="primary" size="medium" fullWidth={true} href="#Projects">
                 View Projects
             </Button>
         </Grid>
