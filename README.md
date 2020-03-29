@@ -9,6 +9,7 @@ Welcome to my portfolio. It's built in React and deployed to the cloud with Goog
 - [ ] Add Certifications Section
 - [ ] Add About Me Section
 - [ ] Add Contact Section (and in navigation) (MVP is fine for now)
+- [ ] Learn how to write tests.
 - [X] Configure GitHub Actions for CI/CD
 - [X] Deploy to Google App Engine
 - [X] Start React Portfolio
