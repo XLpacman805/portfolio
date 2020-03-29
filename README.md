@@ -8,6 +8,7 @@ Welcome to my portfolio. It's built in React and deployed to the cloud with Goog
 - [ ] Add Certifications Section
 - [ ] Add About Me Section
 - [ ] Add Contact Section (and in navigation) (MVP is fine for now)
+- [ ] Setup a Staging server instance.
 - [ ] Learn how to write tests.
 - [X] Setup code to do automatic HTTPS redirect
 - [X] Configure GitHub Actions for CI/CD
