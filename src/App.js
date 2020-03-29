@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import Header from './Header';
 import Projects from './Projects';
 import './App.css';
+import HttpsRedirect from 'react-https-redirect';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,11 +13,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App" id="Home">
-        <Navigation />
-        <Header />
-        <Projects />
-      </div>
+      <HttpsRedirect>
+        <div className="App" id="Home">
+          <Navigation />
+          <Header />
+          <Projects />
+        </div>
+      </HttpsRedirect>  
     );
   }
 }
