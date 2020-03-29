@@ -4,12 +4,12 @@ Welcome to my portfolio. It's built in React and deployed to the cloud with Goog
 
 ## To Do
 
-- [ ] Configure GitHub Actions for CI/CD
 - [ ] Setup code to do automatic HTTPS redirect
 - [ ] Add Google Analytics
 - [ ] Add Certifications Section
 - [ ] Add About Me Section
 - [ ] Add Contact Section (and in navigation) (MVP is fine for now)
+- [X] Configure GitHub Actions for CI/CD
 - [X] Deploy to Google App Engine
 - [X] Start React Portfolio
 
