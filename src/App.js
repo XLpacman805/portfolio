@@ -4,6 +4,7 @@ import Header from './Header';
 import Projects from './Projects';
 import './App.css';
 import HttpsRedirect from 'react-https-redirect';
+import AboutMe from './AboutMe';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Navigation />
           <Header />
           <Projects />
+          <AboutMe />
         </div>
       </HttpsRedirect>  
     );
