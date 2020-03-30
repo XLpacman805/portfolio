@@ -4,12 +4,12 @@ Welcome to my portfolio. It's built in React and deployed to the cloud with Goog
 
 ## To Do
 
-- [ ] Add Google Analytics
 - [ ] Add Certifications Section
-- [ ] Add About Me Section
 - [ ] Add Contact Section (and in navigation) (MVP is fine for now)
 - [ ] Setup a Staging server instance.
 - [ ] Learn how to write tests.
+- [X] Add About Me Section
+- [X] Add Google Analytics
 - [X] Setup code to do automatic HTTPS redirect
 - [X] Configure GitHub Actions for CI/CD
 - [X] Deploy to Google App Engine
