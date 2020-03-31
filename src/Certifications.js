@@ -42,7 +42,7 @@ export default function Certifications() {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia
@@ -70,7 +70,7 @@ export default function Certifications() {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia
@@ -98,7 +98,7 @@ export default function Certifications() {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia
