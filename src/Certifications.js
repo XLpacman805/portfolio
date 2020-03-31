@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.primary,
     },
     media: {
-        height: 140,
+        height: 300,
     },
     card: {
-        maxWidth: 345,
+        maxWidth: 500,
     },
 }));
 
@@ -39,8 +39,8 @@ export default function Certifications() {
                         <h2>Certifications</h2>
                     </Paper>
                 </Grid>
-                <Grid item xs={12}>
-                    <Card className={classes.root}>
+                <Grid item xs={12} sm={6}>
+                    <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
