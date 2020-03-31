@@ -5,7 +5,9 @@ Welcome to my portfolio. It's built in React and deployed to the cloud with Goog
 ## To Do
 
 - [ ] Add Contact Section (and in navigation) (MVP is fine for now)
-- [ ] Setup a Staging server instance.
+- [ ] Update Navigation with the new sections
+- [ ] Earn Front End Libraries (REACT) Certifcation
+- [ ] Setup a Staging server instance
 - [ ] Learn how to write tests.
 - [X] Add Certifications Section
 - [X] Add About Me Section
