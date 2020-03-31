@@ -11,6 +11,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import legacyFrontEnd from './images/legacy-front-end.jpg';
 import javascriptAlgorithmsDataStructures from './images/javascript-algorithms-data-structures.jpg';
+import apisAndMicroservices from './images/apis-microservices.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -46,6 +47,34 @@ export default function Certifications() {
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
+                                image={apisAndMicroservices}
+                                title="FreeCodeCamp APIs and Microservices Certificate"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    APIs and Microservices
+                                    </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Developer Certification, representing approximately 300 hours of coursework. Earned by completing exercises and projects using NodeJS, and Express.js to demonstrate ability of developing REST APIs. 
+                                     </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" href="https://www.freecodecamp.org/certification/xlpacman805/apis-and-microservices" target="_blank">
+                                Verify
+                                </Button>
+                            <Button size="small" color="primary" href="https://guide.freecodecamp.org/certifications/" target="_blank">
+                                Learn More
+                                </Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+
+                <Grid item xs={12} sm={6}>
+                    <Card className={classes.card}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
                                 image={javascriptAlgorithmsDataStructures}
                                 title="JavaScript Algorithms and Data Structures"
                             />
@@ -54,7 +83,7 @@ export default function Certifications() {
                                     JavaScript Algorithms and Data Structures
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Developer Certification, representing approximately 300 hours of coursework. Earned by completing exercises using common algorithms and data structures.
+                                    Developer Certification, representing approximately 300 hours of coursework. Earned by completing exercises and projects using common algorithms and data structures.
                                      </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -82,7 +111,7 @@ export default function Certifications() {
                                     Front End Developer Certificate
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                Developer Certification, representing approximately 400 hours of coursework. Earned by completing exercises using HTML, CSS, JavaScript, Jquery, and Bootstrap. 
+                                Developer Certification, representing approximately 400 hours of coursework. Earned by completing exercises and projects using HTML, CSS, JavaScript, Jquery, and Bootstrap. 
                                      </Typography>
                             </CardContent>
                         </CardActionArea>
