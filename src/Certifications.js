@@ -10,6 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import legacyFrontEnd from './images/legacy-front-end.jpg';
+import javascriptAlgorithmsDataStructures from './images/javascript-algorithms-data-structures.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,6 +40,35 @@ export default function Certifications() {
                         <h2>Certifications</h2>
                     </Paper>
                 </Grid>
+
+                <Grid item xs={12} sm={6}>
+                    <Card className={classes.card}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image={javascriptAlgorithmsDataStructures}
+                                title="JavaScript Algorithms and Data Structures"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    JavaScript Algorithms and Data Structures
+                                    </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Developer Certification, representing approximately 300 hours of coursework. Earned by completing exercises using common algorithms and data structures.
+                                     </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" href="https://www.freecodecamp.org/certification/xlpacman805/javascript-algorithms-and-data-structures" target="_blank">
+                                Verify
+                                </Button>
+                            <Button size="small" color="primary" href="https://guide.freecodecamp.org/certifications/" target="_blank">
+                                Learn More
+                                </Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+
                 <Grid item xs={12} sm={6}>
                     <Card className={classes.card}>
                         <CardActionArea>
@@ -66,6 +96,7 @@ export default function Certifications() {
                         </CardActions>
                     </Card>
                 </Grid>
+
             </Grid>
         </div >
     );
