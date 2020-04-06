@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 import exerciseTrackerImage from './images/exercise-tracker.jpg';
 import thisWebsiteImage from './images/this-website.jpg';
 import urlShortenerImage from './images/url-shortener.jpg';
+import markdownPreviewerImage from './images/markdown-previewer.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -29,6 +30,34 @@ export default function Projects() {
         <Grid container spacing={1}>
             <Grid item xs={12}>
                 <h2>Projects (more coming soon)</h2>
+            </Grid>
+
+            <Grid item xs={12} sm={6} lg={4}>
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                        className={classes.media}
+                        image={markdownPreviewerImage}
+                        title="Live Markdown Previewer"
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Live Markdown Rendering
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            Written in REACT using the Markdown to JSX npm package. I made custom components, binding methods, and managed state in this project. It's also hosted as a service in my Google App Engine project. 
+                        </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                    <Button size="small" color="primary" href="https://markdown-preview-dot-portfolio-272305.appspot.com/" target="_blank">
+                        View Live
+                    </Button>
+                    <Button size="small" color="primary" href="https://github.com/XLpacman805/markdown-preview" target="_blank">
+                        See Code
+                    </Button>
+                </CardActions>
+                </Card>
             </Grid>
 
             <Grid item xs={12} sm={6} lg={4}>
