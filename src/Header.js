@@ -54,7 +54,7 @@ export default function Header() {
             </Button>
         </Grid>
         <Grid item xs={5} md={3} xl={1}>
-            <Button variant="contained" color="secondary" size="medium" fullWidth={true} href="https://my.indeed.com/p/johnnym-nw3vckg" target="_blank">
+            <Button variant="contained" color="secondary" size="medium" fullWidth={true} href="https://drive.google.com/open?id=1G8iSJB9kF8VsHWqwJZXdqvSVNEBotq8S" target="_blank">
                 See Resume
             </Button>
         </Grid>
