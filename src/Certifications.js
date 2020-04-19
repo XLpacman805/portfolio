@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import legacyFrontEnd from './images/legacy-front-end.jpg';
 import javascriptAlgorithmsDataStructures from './images/javascript-algorithms-data-structures.jpg';
 import apisAndMicroservices from './images/apis-microservices.jpg';
+import frontEndLibrariesCertificate from './images/front-end-libraries-certificate.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
         height: 300,
     },
     card: {
-        maxWidth: 500,
+        maxWidth: 800,
     },
 }));
 
@@ -40,6 +41,34 @@ export default function Certifications() {
                     <Paper className={classes.paper}>
                         <h2>Certifications</h2>
                     </Paper>
+                </Grid>
+
+                <Grid item xs={12} sm={6} lg={4}>
+                    <Card className={classes.card}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image={frontEndLibrariesCertificate}
+                                title="FreeCodeCamp Front End Libraries Certificate"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    Front End Libraries
+                                    </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Developer Certification, representing approximately 300 hours of coursework. Earned by completing exercises and final projects using React, jQuery, Sass/Scss, Redux, and JavaScript for front end UI development. 
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" href="https://www.freecodecamp.org/certification/xlpacman805/front-end-libraries" target="_blank">
+                                Verify
+                                </Button>
+                            <Button size="small" color="primary" href="https://guide.freecodecamp.org/certifications/" target="_blank">
+                                Learn More
+                                </Button>
+                        </CardActions>
+                    </Card>
                 </Grid>
 
                 <Grid item xs={12} sm={6} lg={4}>
