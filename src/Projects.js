@@ -12,6 +12,7 @@ import exerciseTrackerImage from './images/exercise-tracker.jpg';
 import thisWebsiteImage from './images/this-website.jpg';
 import urlShortenerImage from './images/url-shortener.jpg';
 import markdownPreviewerImage from './images/markdown-previewer.jpg';
+import reactDrumMachineImage from './images/react-drum-machine.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -37,6 +38,36 @@ export default function Projects() {
                     <CardActionArea>
                         <CardMedia
                         className={classes.media}
+                        image={reactDrumMachineImage}
+                        title="React Drum Machine"
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            React Drum Machine
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            A web application built with React using HTML, CSS, JavaScript, JS Events, DOM manipulation, JSX, ES6 classes, React and React Components. 
+                            Each drumpad component has a sound to play passed through as a prop. The sounds are determined by state. 
+                            Deployed to Google Cloud with App Engine and GitHub Actions. 
+                        </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                    <Button size="small" color="primary" href="https://drum-machine-dot-portfolio-272305.appspot.com/" target="_blank">
+                        View Live
+                    </Button>
+                    <Button size="small" color="primary" href="https://github.com/XLpacman805/drum-machine" target="_blank">
+                        See Code
+                    </Button>
+                </CardActions>
+                </Card>
+            </Grid>
+
+            <Grid item xs={12} sm={6} lg={4}>
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                        className={classes.media}
                         image={markdownPreviewerImage}
                         title="Live Markdown Previewer"
                         />
@@ -45,7 +76,8 @@ export default function Projects() {
                             Live Markdown Rendering
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Written in REACT using the Markdown to JSX npm package. I made custom components, binding methods, and managed state in this project. It's also hosted as a service in my Google App Engine project. 
+                            Written in REACT using the Markdown to JSX npm package. I made custom components, binding methods, and managed state in this project to live render GitHub flavored 
+                            markdown into HTML. It's also hosted as a service in my Google App Engine project and deployed automatically with GitHub Actions. 
                         </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -73,7 +105,8 @@ export default function Projects() {
                             Exercise Tracker API
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            A REST API written in JavaScript using NodeJS and MongoDB. You can use it to add user, get a list of users,and get a certain users' exercise logs. Those exercise logs can also be filtered by date rang, and response limit. Deployed on Google App Engine.
+                            A REST API written in JavaScript using NodeJS and MongoDB. You can use it to add user, get a list of users, and get a certain users' exercise logs. 
+                            Those exercise logs can also be filtered by date range, and a response limit. Deployed on Google App Engine automatically with GitHub Actions.
                         </Typography>
                         </CardContent>
                     </CardActionArea>
