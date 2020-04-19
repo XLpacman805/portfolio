@@ -16,7 +16,7 @@ import reactDrumMachineImage from './images/react-drum-machine.jpg';
 
 const useStyles = makeStyles({
   root: {
-      maxWidth: 500,
+      maxWidth: 800,
   },
   media: {
     height: 300,
