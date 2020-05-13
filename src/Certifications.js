@@ -46,11 +46,13 @@ export default function Certifications() {
                 <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image={frontEndLibrariesCertificate}
-                                title="FreeCodeCamp Front End Libraries Certificate"
-                            />
+                            <a href="https://www.freecodecamp.org/certification/xlpacman805/front-end-libraries" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                    className={classes.media}
+                                    image={frontEndLibrariesCertificate}
+                                    title="FreeCodeCamp Front End Libraries Certificate"
+                                />
+                            </a>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Front End Libraries
@@ -74,11 +76,13 @@ export default function Certifications() {
                 <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image={apisAndMicroservices}
-                                title="FreeCodeCamp APIs and Microservices Certificate"
-                            />
+                            <a  href="https://www.freecodecamp.org/certification/xlpacman805/apis-and-microservices" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                    className={classes.media}
+                                    image={apisAndMicroservices}
+                                    title="FreeCodeCamp APIs and Microservices Certificate"
+                                />
+                            </a>    
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     APIs and Microservices
@@ -102,11 +106,13 @@ export default function Certifications() {
                 <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image={javascriptAlgorithmsDataStructures}
-                                title="JavaScript Algorithms and Data Structures"
-                            />
+                            <a href="https://www.freecodecamp.org/certification/xlpacman805/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                    className={classes.media}
+                                    image={javascriptAlgorithmsDataStructures}
+                                    title="JavaScript Algorithms and Data Structures"
+                                />
+                            </a>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     JavaScript Algorithms and Data Structures
@@ -130,11 +136,13 @@ export default function Certifications() {
                 <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image={legacyFrontEnd}
-                                title="Free Code Camp Legacy Front End Developer Certificate"
-                            />
+                            <a href="https://www.freecodecamp.org/certification/xlpacman805/legacy-front-end" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                    className={classes.media}
+                                    image={legacyFrontEnd}
+                                    title="Free Code Camp Legacy Front End Developer Certificate"
+                                />
+                            </a>    
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Front End Developer Certificate
