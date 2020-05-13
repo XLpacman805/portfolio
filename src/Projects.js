@@ -34,43 +34,47 @@ export default function Projects() {
             </Grid>
 
             <Grid item xs={12} sm={6} lg={4}>
-                <Card className={classes.root}>
-                    <CardActionArea>
-                        <CardMedia
-                        className={classes.media}
-                        image={reactDrumMachineImage}
-                        title="React Drum Machine"
-                        />
-                        <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            React Drum Machine
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            A web application built with React using HTML, CSS, JavaScript, JS Events, DOM manipulation, JSX, ES6 classes, React and React Components. 
-                            Each drumpad component has a sound to play passed through as a prop. The sounds are determined by state. 
-                            Deployed to Google Cloud with App Engine and GitHub Actions. 
-                        </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                    <Button size="small" color="primary" href="https://drum-machine-dot-portfolio-272305.appspot.com/" target="_blank">
-                        View Live
-                    </Button>
-                    <Button size="small" color="primary" href="https://github.com/XLpacman805/drum-machine" target="_blank">
-                        See Code
-                    </Button>
-                </CardActions>
-                </Card>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <a href="https://drum-machine-dot-portfolio-272305.appspot.com/" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                className={classes.media}
+                                image={reactDrumMachineImage}
+                                title="React Drum Machine"
+                                />
+                            </a>    
+                            <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                React Drum Machine
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                A web application built with React using HTML, CSS, JavaScript, JS Events, DOM manipulation, JSX, ES6 classes, React and React Components. 
+                                Each drumpad component has a sound to play passed through as a prop. The sounds are determined by state. 
+                                Deployed to Google Cloud with App Engine and GitHub Actions. 
+                            </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                        <Button size="small" color="primary" href="https://drum-machine-dot-portfolio-272305.appspot.com/" target="_blank">
+                            View Live
+                        </Button>
+                        <Button size="small" color="primary" href="https://github.com/XLpacman805/drum-machine" target="_blank">
+                            See Code
+                        </Button>
+                    </CardActions>
+                    </Card>  
             </Grid>
 
             <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
-                        <CardMedia
-                        className={classes.media}
-                        image={markdownPreviewerImage}
-                        title="Live Markdown Previewer"
-                        />
+                        <a href="https://markdown-preview-dot-portfolio-272305.appspot.com/" target="_blank" rel="noopener noreferrer">
+                            <CardMedia
+                            className={classes.media}
+                            image={markdownPreviewerImage}
+                            title="Live Markdown Previewer"
+                            />
+                        </a>    
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             Live Markdown Rendering
@@ -95,11 +99,13 @@ export default function Projects() {
             <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
-                        <CardMedia
-                        className={classes.media}
-                        image={exerciseTrackerImage}
-                        title="Exercise Tracker Card Media"
-                        />
+                        <a href="https://master-253803.appspot.com/" target="_blank" rel="noopener noreferrer">
+                            <CardMedia
+                            className={classes.media}
+                            image={exerciseTrackerImage}
+                            title="Exercise Tracker Card Media"
+                            />
+                        </a>
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             Exercise Tracker API
@@ -124,11 +130,13 @@ export default function Projects() {
             <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
-                        <CardMedia
-                        className={classes.media}
-                        image={urlShortenerImage}
-                        title="URL Shortener Microservice Media"
-                        />
+                        <a href="https://shor10.glitch.me/api/shorturl/tlv3FtF" target="_blank" rel="noopener noreferrer">
+                            <CardMedia
+                            className={classes.media}
+                            image={urlShortenerImage}
+                            title="URL Shortener Microservice Media"
+                            />
+                        </a>
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             URL Shortener Microservice
@@ -152,11 +160,13 @@ export default function Projects() {
             <Grid item xs={12} sm={6} lg={4}>
                 <Card className={classes.root}>
                     <CardActionArea>
-                        <CardMedia
-                        className={classes.media}
-                        image={thisWebsiteImage}
-                        title="An image that says this website wrapped in curly braces"
-                        />
+                        <a href="https://johnnymeza354709.invisionapp.com/freehand/portfolio-Yw2lqdfQA?v=vt1YhGHUZqBxTnYxO3N%2Fvg%3D%3D&linkshare=urlcopied" target="_blank" rel="noopener noreferrer">
+                            <CardMedia
+                            className={classes.media}
+                            image={thisWebsiteImage}
+                            title="An image that says this website wrapped in curly braces"
+                            />
+                        </a>    
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             This Website!
