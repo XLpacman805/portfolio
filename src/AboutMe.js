@@ -18,8 +18,8 @@ export default function AboutMe() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>
+    <div id="about-me" className={classes.root}>
+      <Grid container>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
               <h2>About Me</h2>

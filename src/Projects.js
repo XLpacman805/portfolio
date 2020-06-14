@@ -14,15 +14,20 @@ import urlShortenerImage from './images/url-shortener.jpg';
 import markdownPreviewerImage from './images/markdown-previewer.jpg';
 import reactDrumMachineImage from './images/react-drum-machine.jpg';
 import lotusFormImage from './images/lotus-form.jpg';
-
-const useStyles = makeStyles({
+import Paper from '@material-ui/core/Paper';
+const useStyles = makeStyles((theme) => ({
   root: {
       maxWidth: 800,
   },
   media: {
     height: 300,
   },
-});
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.primary,
+},
+}));
 
 export default function Projects() {
   const classes = useStyles();
@@ -31,7 +36,9 @@ export default function Projects() {
     <div id="Projects">
         <Grid container spacing={1}>
             <Grid item xs={12}>
-                <h2>Projects (more coming soon)</h2>
+                <Paper className={classes.paper}>
+                    <h2>Projects (more coming soon)</h2>
+                </Paper>
             </Grid>
 
             <Grid item xs={12} sm={6} lg={4}>
