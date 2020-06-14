@@ -13,6 +13,7 @@ import thisWebsiteImage from './images/this-website.jpg';
 import urlShortenerImage from './images/url-shortener.jpg';
 import markdownPreviewerImage from './images/markdown-previewer.jpg';
 import reactDrumMachineImage from './images/react-drum-machine.jpg';
+import lotusFormImage from './images/lotus-form.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -31,6 +32,36 @@ export default function Projects() {
         <Grid container spacing={1}>
             <Grid item xs={12}>
                 <h2>Projects (more coming soon)</h2>
+            </Grid>
+
+            <Grid item xs={12} sm={6} lg={4}>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <a href="https://storage.googleapis.com/lotus-public/build/index.html" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                className={classes.media}
+                                image={lotusFormImage}
+                                title="React Form for Lotus Credit Application"
+                                />
+                            </a>    
+                            <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                React Credit Application Multistage Form
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                I created this form from the ground up, given only a design PSD and the business challenges needed to be solved. I chose to use React, Styled Components and Shadow DOM so I can captilize on style encapsulation, and the ease of use provided by React-App and it's tooling. The backend is a REST API written in NodeJS and ExpressJS.
+                            </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                        <Button size="small" color="primary" href="https://storage.googleapis.com/lotus-public/build/index.html" target="_blank">
+                            View Live
+                        </Button>
+                        <Button size="small" color="primary" disabled href="https://github.com/XLpacman805/drum-machine" target="_blank">
+                            See Code
+                        </Button>
+                    </CardActions>
+                    </Card>  
             </Grid>
 
             <Grid item xs={12} sm={6} lg={4}>
