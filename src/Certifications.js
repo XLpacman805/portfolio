@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     paper: {
+        marginTop: theme.spacing(1),
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.primary,
@@ -36,7 +37,7 @@ export default function Certifications() {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={3}>
+            <Grid container spacing={1}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <h2>Certifications</h2>
