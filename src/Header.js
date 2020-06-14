@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
+import Paper from '@material-ui/core/Paper';
 
 
 const useStyles = makeStyles(theme => ({
@@ -34,6 +35,7 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
+      <Paper>
       <Grid container spacing={1}>
         <Grid item xs={12}>
             <center>
@@ -66,6 +68,7 @@ export default function Header() {
             </center>
         </Grid>
       </Grid>
+      </Paper>
     </div>
   );
 }
