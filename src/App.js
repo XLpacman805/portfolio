@@ -6,6 +6,7 @@ import './App.css';
 import HttpsRedirect from 'react-https-redirect';
 import AboutMe from './AboutMe';
 import Certifications from './Certifications';
+import Skills from './Skills';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class App extends React.Component {
         <div className="App" id="Home">
           <Navigation />
           <Header />
+          <Skills />
           <Projects />
           <AboutMe />
           <Certifications />
