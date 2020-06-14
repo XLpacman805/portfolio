@@ -1,37 +1,98 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import { withStyles } from '@material-ui/core/styles';
+import { green } from '@material-ui/core/colors';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import Favorite from '@material-ui/icons/Favorite';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    marginTop: theme.spacing(1)
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.primary,
-  },
-}));
+const GreenCheckbox = withStyles({
+    root: {
+      color: green[400],
+      '&$checked': {
+        color: green[600],
+      },
+    },
+    checked: {},
+  })((props) => <Checkbox color="default" {...props} />);
+
+const categories = {
+    frontEnd: 'Front-End',
+    backEnd: 'Backend',
+    devOps: 'DevOps',
+    other: 'Other'
+}
+
+const skills = [
+    {name: 'HTML', category: categories.frontEnd},
+    {name: 'CSS', category: categories.frontEnd},
+    {name: 'JavaScript', category: categories.frontEnd}
+];
 
 export default function Skills() {
-  const classes = useStyles();
+    const [state, setState] = React.useState({
+        checkedA: true,
+        checkedB: true,
+        checkedF: true,
+        checkedG: true,
+      });
 
-  return (
-    <div id="skills" className={classes.root}>
-      <Grid container>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-              <h2>Skills</h2>
-                <center>
-                    <Grid item xs={12} sm={6}>
-                        Skills Go here
-                </Grid>
-              </center>
-          </Paper>
-        </Grid>
-      </Grid>
-    </div>
-  );
+      const handleChange = (event) => {
+        setState({ ...state, [event.target.name]: event.target.checked });
+      };
+
+      return (
+        <FormGroup row>
+          <FormControlLabel
+            control={<Checkbox checked={state.checkedA} onChange={handleChange} name="checkedA" />}
+            label="Secondary"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkedB}
+                onChange={handleChange}
+                name="checkedB"
+                color="primary"
+              />
+            }
+            label="Primary"
+          />
+          <FormControlLabel control={<Checkbox name="checkedC" />} label="Uncontrolled" />
+          <FormControlLabel disabled control={<Checkbox name="checkedD" />} label="Disabled" />
+          <FormControlLabel disabled control={<Checkbox checked name="checkedE" />} label="Disabled" />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkedF}
+                onChange={handleChange}
+                name="checkedF"
+                indeterminate
+              />
+            }
+            label="Indeterminate"
+          />
+          <FormControlLabel
+            control={<GreenCheckbox checked={state.checkedG} onChange={handleChange} name="checkedG" />}
+            label="Custom color"
+          />
+          <FormControlLabel
+            control={<Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />} name="checkedH" />}
+            label="Custom icon"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
+                checkedIcon={<CheckBoxIcon fontSize="small" />}
+                name="checkedI"
+              />
+            }
+            label="Custom size"
+          />
+        </FormGroup>
+      );
 }
