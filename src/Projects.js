@@ -54,7 +54,7 @@ export default function Projects() {
                             </a>    
                             <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
-                                React Credit Application Multistage Form
+                                React Multi-Stage Form
                             </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">
                                 I created this form from the ground up, given only a design PSD and the business challenges needed to be solved. I chose to use React, Styled Components and Shadow DOM so I can captilize on style encapsulation, and the ease of use provided by React-App and it's tooling. The backend is a REST API written in NodeJS and ExpressJS.
