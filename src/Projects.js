@@ -45,7 +45,7 @@ export default function Projects() {
             <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.root}>
                         <CardActionArea>
-                            <a href="https://storage.googleapis.com/lotus-public/build/index.html" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.lotuscars.com/apply-for-financing/" target="_blank" rel="noopener noreferrer">
                                 <CardMedia
                                 className={classes.media}
                                 image={lotusFormImage}
