@@ -31,7 +31,7 @@ export default function AboutMe() {
                     </p>
 
                     <p>
-                        I loved the idea that I could be creative on a computer and since then it's grown into my career. I was that tech kid in class who the teachers would ask computer questions. That grew into me being the professional who executive leadership ask complexity questions to. 
+                        I loved the idea that I could be creative on a computer and since then it's grown into my career. I was that tech kid in class who the teachers would ask computer questions. That grew into me being the professional developer I am today. 
                     </p>
 
                     <p>

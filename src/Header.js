@@ -48,13 +48,13 @@ export default function Header() {
         </Grid>
         <Grid item xs={1} />
 
-        <Grid item xs={1} md={3} xl={5}/>
-        <Grid item xs={5} md={3} xl={1}>
+        <Grid item xs={1} md={5} xl={5}/>
+        <Grid item xs={5} md={1} xl={1}>
             <Button variant="contained" color="primary" size="medium" fullWidth={true} href="#Projects">
                 View Projects
             </Button>
         </Grid>
-        <Grid item xs={5} md={3} xl={1}>
+        <Grid item xs={5} md={1} xl={1}>
             <Button variant="contained" color="secondary" size="medium" fullWidth={true} href="https://drive.google.com/file/d/12A-ihpeSPp5UYyHtXb8zLK6bGq6XlTmL/view?usp=sharing" target="_blank">
                 See My Resume
             </Button>

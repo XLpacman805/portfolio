@@ -62,7 +62,7 @@ export default function Projects() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                        <Button size="small" color="primary" href="https://storage.googleapis.com/lotus-public/build/index.html" target="_blank">
+                        <Button size="small" color="primary" href="https://www.lotuscars.com/apply-for-financing/" target="_blank">
                             View Live
                         </Button>
                         <Button size="small" color="primary" disabled href="https://github.com/XLpacman805/drum-machine" target="_blank">
