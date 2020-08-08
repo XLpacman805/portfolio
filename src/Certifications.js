@@ -47,6 +47,37 @@ export default function Certifications() {
                 <Grid item xs={12} sm={6} lg={4}>
                     <Card className={classes.card}>
                         <CardActionArea>
+                            <a href="https://www.udemy.com/certificate/UC-956f038c-604a-47fb-8b96-3a8170228440/" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                    className={classes.media}
+                                    image='https://udemy-certificate.s3.amazonaws.com/image/UC-956f038c-604a-47fb-8b96-3a8170228440.jpg'
+                                    title="Progressive Web Apps (PWA) Certificate of Completion"
+                                />
+                            </a>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                Progressive Web Apps (PWA) Certificate of Completion
+                                    </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                This certificate above verifies that Johnny Meza successfully completed the course Progressive Web Apps (PWA) - The Complete Guide on 08/07/2020 as taught by Academind by Maximilian Schwarzmüller, Maximilian Schwarzmüller on Udemy. The certificate indicates the entire course was completed as validated by the student.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" href="https://www.udemy.com/certificate/UC-956f038c-604a-47fb-8b96-3a8170228440/" target="_blank">
+                                Verify
+                                </Button>
+                            <Button size="small" color="primary" href="https://www.udemy.com/course/progressive-web-app-pwa-the-complete-guide/" target="_blank">
+                                Learn More
+                                </Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+
+
+                <Grid item xs={12} sm={6} lg={4}>
+                    <Card className={classes.card}>
+                        <CardActionArea>
                             <a href="https://www.freecodecamp.org/certification/xlpacman805/front-end-libraries" target="_blank" rel="noopener noreferrer">
                                 <CardMedia
                                     className={classes.media}
