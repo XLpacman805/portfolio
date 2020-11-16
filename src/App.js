@@ -19,8 +19,8 @@ class App extends React.Component {
         <div className="App" id="Home">
           <Navigation />
           <Header />
-          <Projects />
           <AboutMe />
+          <Projects />
           <Certifications />
         </div>
       </HttpsRedirect>  

@@ -26,16 +26,24 @@ export default function AboutMe() {
               <h2>About Me</h2>
                 <center>
                     <Grid item xs={12} sm={6}>
-                    <p>
-                        I'm a self taught web developer and car enthusiast. My first introduction to code was HTML in a 7th grade technology class.
+                    <p>Currently I'm a <u>senior frontend developer</u> working at LiveArea CX. 
+                      We're a Salesforce implementation partner, and we develop for all of the major ecommerce platforms as well.
+                      I've built custom cartridges and custom business manager cartridges using <b>Javascript, HTML, CSS, ES6, Web Components, CommonJS (similar to Express), SFRA, and B2C Commerce Script. </b>
                     </p>
 
                     <p>
-                        I loved the idea that I could be creative on a computer and since then it's grown into my career. I was that tech kid in class who the teachers would ask computer questions. That grew into me being the professional developer I am today. 
+                      Although my title is senior frontend developer, <b>I spend almost 50% of my time writing server side Javascript HTTP routes for my frontend</b>, in order 
+                      to perform CRUD (Create, Read, Update, Delete) operations on business manager objects, whether it be custom objects or system objects. 
+                    </p>
+
+                    <p> In total I have <u>3 years of Javascript experience</u> (including Typescript). One of those years being <b>Salesforce Commerce Cloud</b> (SFRA) development. 
+                      In my last role at MXS Solutions, an up and coming digital marketing company in the automotive space, I was doing full stack Javascript development mostly in <b>NodeJS, 
+                      React, Express, and MongoDB.</b> Ocassionaly I'd get an odd project where the solutions required ADF XML, Google App Script, Facebook API, or achitecting Zapier flows.  
                     </p>
 
                     <p>
-                        Other than development I enjoy learning business, latest sofware development strategies, photography, and hosting car rally events for sports car enthusiasts. You can see my car club on <a href="https://www.instagram.com/sunsetrallygroup/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+                      For cloud technologies I'm a huge <b>Google Firebase</b> fan! I used to use Google Cloud because at MXS we used GSuite, so it made sense to stick within that ecosystem. However,
+                      after using Firebase for the first time I told all my developer friends! It makes setting up a new project in the cloud so easy. I also like <b>GitHub Acitons</b> for CI/CD Pipelines.
                     </p>
                 </Grid>
               </center>
